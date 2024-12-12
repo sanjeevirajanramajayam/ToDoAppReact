@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+li:has(input:checked) label{
+    text-decoration: line-through;
+}
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Outer Container Styling */
+div > div {
+    background-color: #ffffff;
+    padding: 40px; /* Increased padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Increased width */
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px; /* Increased margin */
+    font-size: 30px; /* Much larger font size */
+}
+
+/* Input Box and Add Button Styling (same line) */
+input[type="text"] {
+    width: calc(100% - 140px); /* Adjusted width to leave space for button */
+    padding: 15px; /* Increased padding */
+    border: 1px solid #ddd;
+    border-radius: 6px; /* Slightly larger border radius */
+    font-size: 20px; /* Larger font size */
+    margin-right: 20px; /* Increased space between input and button */
+    outline: none;
+    display: inline-block;
+}
+
+button {
+    padding: 15px 20px; /* Increased padding */
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+    border-radius: 6px; /* Slightly larger border radius */
+    cursor: pointer;
+    font-size: 18px; /* Larger font size */
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #3949ab;
+}
+
+/* List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px; /* Increased margin */
+}
+
+/* List Item Styling */
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0; /* Increased padding */
+    border-bottom: 1px solid #eee;
+    font-size: 22px; /* Much larger font size */
+}
+
+/* Label and Checkbox Styling */
+label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-right: 20px; /* Increased space */
+    transform: scale(1.6); /* Much bigger checkbox size */
+}
+
+/* Buttons Container in List Item */
+button.delete-btn,
+button.edit-btn {
+    margin-left: 20px; /* Increased space between buttons */
+}
+
+/* Button Container Styling (for alignment) */
+li > .button-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Delete and Edit Button Styling */
+button.delete-btn {
+    background-color: #f44336;
+}
+
+button.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+button.edit-btn {
+    background-color: #ff9800;
+}
+
+button.edit-btn:hover {
+    background-color: #f57c00;
+}
+
+/* Responsiveness */
+@media (max-width: 480px) {
+    div > div {
+        width: 100%;
+        padding: 30px; /* Increased padding for mobile */
+    }
+
+    input[type="text"] {
+        width: calc(100% - 120px); /* Adjusted width for smaller screens */
+        font-size: 22px; /* Larger font size on mobile */
+    }
+
+    button {
+        width: 120px; /* Increased button width for better readability */
+        font-size: 22px; /* Larger font size on mobile */
+        padding: 18px 22px; /* Increased padding on mobile */
+    }
+
+    li {
+        font-size: 24px; /* Larger font size on mobile */
+    }
+
+    input[type="checkbox"] {
+        transform: scale(1.8); /* Even bigger checkbox size on mobile */
+    }
+}
+
+
+
+
